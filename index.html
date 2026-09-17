@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structured Chatbot</title>
+  <link rel="stylesheet" href="project_style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <header class="chat-header">
+      <h1 class="chat-title">Structured Chatbot</h1>
+      <button id="clearChat" class="clear-btn" title="Clear chat history">Clear chat</button>
+    </header>
+
+    <div class="chat-container" id="chatContainer">
+      <div class="ai-chat-box">
+        <img src="ai-image.png" alt="" class="avatar ai-avatar">
+        <div class="ai-chat-area">Hello! How can I help you?</div>
+      </div>
+    </div>
+
+    <div class="prompt-area">
+
+      <div class="image-preview" id="imagePreview" hidden>
+        <img id="previewImg" src="" alt="Selected image">
+        <button id="removeImage" class="remove-image-btn" aria-label="Remove attached image">&times;</button>
+      </div>
+
+      <input type="file" id="imageInput" accept="image/*" hidden>
+
+      <input type="text" id="prompt" placeholder="Message..." autocomplete="off">
+
+      <button id="image" title="Attach an image"><img src="img.svg" alt=""></button>
+      <button id="submit" title="Send message"><img src="submit.svg" alt=""></button>
+
+    </div>
+
+  </div>
+
+  <script src="project.js"></script>
+</body>
+</html>
